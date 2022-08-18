@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import { useEffect, useState, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth, useData } from "../../context";
@@ -70,14 +71,14 @@ export default function Navbar(){
 
                 <div className="search-container search-mob"
                 onKeyDown={(event) => setInput(event.target.value)}>
-                    <i className="fa fa-search" aria-hidden="true"></i>
                     <input
                     type="search"
                     name="search"
                     className="search-bar"
                     placeholder="Search product, brand & more..."
                     id=""
-                    />                   
+                    /> 
+                    <i className="fa fa-search" aria-hidden="true"></i>                  
                 </div>
             </ul>
         </div>
