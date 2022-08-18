@@ -79,6 +79,13 @@ ul.navbar{
     justify-content: center;    
 }
 
+.nav-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+
 @media screen and (max-width:550px) {
 
 
