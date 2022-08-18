@@ -20,7 +20,6 @@ function App() {
       <Router>
         <Navbar />
         
-        
         <ToastContainer 
           position="top-right"
           autoClose="500"
@@ -28,41 +27,56 @@ function App() {
           style={{top: "4.5em", right: "0em"}}
         />
 
-        {/* <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/mockman" element={<Mockman />} />
-          <Route exact path="/product" element={<Product />} />
-          <Route exact path="/product/:productId" element={<ProductPage />} />
-          <Route exact path="/login" element={<Login />} />
-          <Route exact path="/signup" element={<Signup />} />
-          <Route exact path="/*" element={<Error />} />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/product" element={<Product />} />
+          {/* <Route path="/mockman" element={<Mockman />} />
+          <Route path="/product/:productId" element={<ProductPage />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="*" element={<Error />} />
+          <Route
+            path="/wishlist"
+            element={
+              <PrivateRoute>
+                <Wishlist />
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path="/checkout"
+            element={
+              <PrivateRoute>
+                <Checkout />
+              </PrivateRoute>
+            }
+          />
 
-          <Route path="/wishlist" element={
-            <PrivateRoute>
-              <Wishlist />
-            </PrivateRoute>
-          } />
-          <Route path="/cart" element={
-            <PrivateRoute>
-              <Cart />
-            </PrivateRoute>
-          } />
-          <Route path="/user_profile" element={
-            <PrivateRoute>
-              <UserProfile />
-            </PrivateRoute>
-          } />
-          <Route path="/order_summary" element={
-            <PrivateRoute>
-              <OrderSummary />
-            </PrivateRoute>
-          } />
-          <Route path="/checkout" element={
-            <PrivateRoute>
-              <Checkout />
-            </PrivateRoute>
-          } />
-        </Routes> */}
+          <Route
+            path="/cart"
+            element={
+              <PrivateRoute>
+                <Cart />
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path="/user_profile"
+            element={
+              <PrivateRoute>
+                <UserProfile />
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path="/order_summary"
+            element={
+              <PrivateRoute>
+                <OrderSummary />
+              </PrivateRoute>
+            }
+          /> */}
+        </Routes>
 
       </Router>
     </div>
