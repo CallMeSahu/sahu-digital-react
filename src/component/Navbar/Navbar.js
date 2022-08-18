@@ -13,6 +13,21 @@ export default function Navbar(){
     const navigate = useNavigate();
     let timer = useRef();
     const [input, setInput] = useState("");
+
+    useEffect(() => {
+        clearTimeout(timer.current);
+        timer.current = setTimeout(() => {
+          dataDispatch({
+            type: ACTION_TYPE.SEARCH,
+            payload: input,
+          });
+          setLoader(true);
+          setTimeout(() => setLoader(false), 500);
+          if (input.trim().length > 0) {
+            navigate("/product");
+          }
+        }, 500);
+      }, [input]);
     return(
         <div className="nav-header">
             <ul className="navbar">
