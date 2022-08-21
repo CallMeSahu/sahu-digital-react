@@ -7,7 +7,7 @@ import { useData } from '../../context';
 
 export function Home(){
     const [categories, setCategories] = useState();
-    const navigate = useNavigate;
+    const navigate = useNavigate();
     const { dataDispatch, changeTitle } = useData();
 
     useEffect(() => {
