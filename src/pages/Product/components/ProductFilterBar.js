@@ -14,26 +14,27 @@ export function ProductFilterBar(){
         products,
         category,
         drawer,
-        setDrawer
-    } = useData();
-
-    const changeHandler = (typeOfDispatch, typeOfAction, e) => {
+        setDrawer,
+      } = useData();
+    
+      const changeHandler = (typeOfDispatch, typeOfAction, e) => {
         dataDispatch({
-            type: typeOfAction,
-            payload: 
-                typeOfDispatch === "CATEGORY"
-                 ? {[typeOfAction]: e.target.checked}
-                 : typeOfAction,
+          type: typeOfDispatch,
+          payload:
+            typeOfDispatch === "CATEGORY"
+              ? { [typeOfAction]: e.target.checked }
+              : typeOfAction,
         });
-    };
-
-    const isSortByRating = (star) => sortByRating && sortByRating === star;
-    const isSortByPrice = (type) => sortBy && sortBy === type;
+      };  
+    
+      const isSortByRating = (star) => sortByRating && sortByRating === star;
+      const isSortByPrice = (type) => sortBy && sortBy === type;
+    
 
     return(
         <div className={`filter-container ${drawer ? "trans-on" : "trans-off"}`}>
             <div className='filter-head'>
-                <h4>Filters</h4>
+                <h3>Filters</h3>
                 <p className="paragraph-medium clr-flt-btn"
                 onClick={() => {
                     changeHandler(ACTION_TYPE.CLEAR_FILTER, products);
@@ -50,7 +51,7 @@ export function ProductFilterBar(){
                         <p className="check-desc">₹50K</p>
                         <p className="check-desc">₹75K+</p>
                     </div>
-                    <input type="range" className="slider" name="rangeInput" min="25,000" max="75,000" value={priceRange}
+                    <input type="range" className="slider" name="rangeInput" min="25000" max="75000" value={priceRange}
                     onChange={(e) => 
                         changeHandler(ACTION_TYPE.PRICE_RANGE, e.target.value, e)
                     }
@@ -65,15 +66,17 @@ export function ProductFilterBar(){
                         const [catName, isCatChecked] = item;
                         return (
                             <label key={item} className="select-input">
-                                <input 
+                                <input
                                     type="checkbox"
                                     name="light"
-                                    className="input-checkbox"
+                                    className="checkbox-input"
                                     checked={isCatChecked}
-                                    onChange={(e) => changeHandler(ACTION_TYPE.CATEGORY, catName, e)}
+                                    onChange={(e) =>
+                                        changeHandler(ACTION_TYPE.CATEGORY, catName, e)
+                                    }
                                 />
                                 <span className='check-desc'>
-                                    {`${catName.charAt(0).toUpperCase()}${catName.slice(1)}`}
+                                    {catName}
                                 </span>
                             </label>
                         );

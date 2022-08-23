@@ -14,7 +14,7 @@ export const products = [
     price: 112900,
     originalPrice: 119900,
     isBestSeller: true,
-    categoryName: "Apple",
+    category: "Apple",
     rating: 4.8,
   },
   {
@@ -25,7 +25,7 @@ export const products = [
     price: 90950,
     originalPrice: 131999,
     isBestSeller: false,
-    categoryName: "Samsung",
+    category: "Samsung",
     rating: 4.2,
   },
   {
@@ -36,7 +36,7 @@ export const products = [
     price: 60999,
     originalPrice: 66299,
     isBestSeller: true,
-    categoryName: "One Plus",
+    category: "One Plus",
     rating: 4.5,
   },
   {
@@ -47,7 +47,7 @@ export const products = [
     price: 34999,
     originalPrice: 39299,
     isBestSeller: false,
-    categoryName: "Realme",
+    category: "Realme",
     rating: 4.0,
   },
   {
@@ -58,7 +58,7 @@ export const products = [
     price: 122900,
     originalPrice: 129900,
     isBestSeller: false,
-    categoryName: "Apple",
+    category: "Apple",
     rating: 3.8,
   },
   {
@@ -69,7 +69,7 @@ export const products = [
     price: 78999,
     originalPrice: 101999,
     isBestSeller: false,
-    categoryName: "Samsung",
+    category: "Samsung",
     rating: 3.2,
   },
   {
@@ -80,7 +80,7 @@ export const products = [
     price: 35999,
     originalPrice: 38299,
     isBestSeller: true,
-    categoryName: "One Plus",
+    category: "One Plus",
     rating: 3.0,
   },
   {
@@ -91,7 +91,7 @@ export const products = [
     price: 35999,
     originalPrice: 39999,
     isBestSeller: false,
-    categoryName: "Realme",
+    category: "Realme",
     rating: 3.5,
   },
   {
@@ -102,7 +102,7 @@ export const products = [
     price: 69900,
     originalPrice: 79900,
     isBestSeller: false,
-    categoryName: "Apple",
+    category: "Apple",
     rating: 3.8,
   },
   {
@@ -113,7 +113,7 @@ export const products = [
     price: 62000,
     originalPrice: 85999,
     isBestSeller: false,
-    categoryName: "Samsung",
+    category: "Samsung",
     rating: 3.2,
   },
   {
@@ -124,7 +124,7 @@ export const products = [
     price: 27999,
     originalPrice: 28999,
     isBestSeller: false,
-    categoryName: "One Plus",
+    category: "One Plus",
     rating: 3.5,
   },
   {
@@ -135,7 +135,7 @@ export const products = [
     price: 31999,
     originalPrice: 34299,
     isBestSeller: false,
-    categoryName: "Realme",
+    category: "Realme",
     rating: 3.0,
   },
   {
@@ -146,7 +146,7 @@ export const products = [
     price: 68990,
     originalPrice: 69900,
     isBestSeller: false,
-    categoryName: "Apple",
+    category: "Apple",
     rating: 2.8,
   },
   {
@@ -157,7 +157,7 @@ export const products = [
     price: 49999,
     originalPrice: 74999,
     isBestSeller: false,
-    categoryName: "Samsung",
+    category: "Samsung",
     rating: 2.2,
   },
   {
@@ -168,7 +168,7 @@ export const products = [
     price: 24999,
     originalPrice: 23999,
     isBestSeller: false,
-    categoryName: "One Plus",
+    category: "One Plus",
     rating: 2.5,
   },
   {
@@ -179,7 +179,7 @@ export const products = [
     price: 24990,
     originalPrice: 29299,
     isBestSeller: false,
-    categoryName: "Realme",
+    category: "Realme",
     rating: 2.0,
   }  
 ];

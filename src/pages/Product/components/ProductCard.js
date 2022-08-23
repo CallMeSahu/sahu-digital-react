@@ -9,41 +9,40 @@ import { toast } from 'react-toastify';
 
 export function ProductCard({product}){
     const { dataDispatch, cart, wishlist, drawer } = useData();
-    const [btnDisabled, setBtnDisabled] = useState(false);
+  const [btnDisabled, setBtnDisabled] = useState(false);
 
-    const navigate = useNavigate();
-    const { token } = useAuth();
+  const navigate = useNavigate();
+  const { token } = useAuth();
+  const {
+    _id: id,
+    img,
+    name,
+    brand,
+    price,
+    originalPrice,
+    isBestSeller,
+    rating,
+    percentageOff,
+  } = product;
 
-    const {
-        _id: id,
-        img, 
-        name,
-        brand,
-        price,
-        originalPrice,
-        isBestSeller,
-        rating,
-        percentageOff,
-    } = product;
+  const isInCart = isProductInCart(cart, id);
+  const isInWishlist = isProductInWishlist(wishlist, id);
 
-    const isInCart = isProductInCart(cart, id);
-    const isInWishlist = isProductInWishlist(wishlist, id);
+  const addToCartHandler = () => {
+    token
+      ? isInCart
+        ? navigate("/cart")
+        : addToCart(dataDispatch, product, token, toast, setBtnDisabled)
+      : navigate("/login");
+  };
 
-    const addToCartHandler = () => {
-        token
-        ? isInCart
-          ? navigate("/cart")
-          : addToCart(dataDispatch, product, token, toast, setBtnDisabled)
-        : navigate("/login");    
-    };
-
-    const wishlistHandler = () => {
-        token
-         ? isInWishlist
-           ? removeFromWishlist(id, dataDispatch, token, toast)
-           : addToWishlist(dataDispatch, product, token, toast)
-         : navigate("/login");  
-    };
+  const wishlistHandler = () => {
+    token
+      ? isInWishlist
+        ? removeFromWishlist(id, dataDispatch, token, toast)
+        : addToWishlist(dataDispatch, product, token, toast)
+      : navigate("/login");
+  };
 
     return(
         <div className="card">
