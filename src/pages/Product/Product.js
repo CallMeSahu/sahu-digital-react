@@ -24,10 +24,11 @@ export function Product(){
       const filteredData = filterData([...searchData], category);
       const sortedData = sortData([...filteredData], sortBy, priceRange, sortByRating);
     return(
-        <div>
+        <div className="product-main-container">
+        <ProductFilterBar />  
         {sortedData.map((product) => (
             <ProductCard key={product._id} product={product} />
           ))}
-    </div>
+        </div>
     )
 }
