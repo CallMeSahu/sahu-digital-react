@@ -7,11 +7,18 @@
     display: flex;
     flex-direction: column;
     width: 25rem;
-    margin-top: 2rem;
     padding: 2rem;
     gap: 2rem;
     box-shadow:  rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 1rem;
+    margin-top: 4rem;
+}
+
+.auth-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
 }
 
 .auth-main, .auth-checkbox, .first-last-wrapper{
