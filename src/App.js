@@ -32,6 +32,8 @@ function App() {
           <Route path="/product" element={<Product />} />
           <Route path="/mockman" element={<Mockman />} />
           <Route path="/product/:productId" element={<ProductPage />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
           {/* 
           
           <Route path="/login" element={<Login />} />
