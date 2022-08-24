@@ -12,6 +12,7 @@
     border-radius: 0.5rem;
 }
 
+
 @media screen and (max-width: 950px) {
     .disabled-click {
         pointer-events: none;
