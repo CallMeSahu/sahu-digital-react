@@ -32,10 +32,18 @@ function App() {
           <Route path="/product" element={<Product />} />
           <Route path="/mockman" element={<Mockman />} />
           <Route path="/product/:productId" element={<ProductPage />} />
-          {/* 
-          
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route
+            path="/user_profile"
+            element={
+              <PrivateRoute>
+                <UserProfile />
+              </PrivateRoute>
+            }
+          />
+          {/* 
+          
           <Route path="*" element={<Error />} />
           <Route
             path="/wishlist"
@@ -62,14 +70,7 @@ function App() {
               </PrivateRoute>
             }
           />
-          <Route
-            path="/user_profile"
-            element={
-              <PrivateRoute>
-                <UserProfile />
-              </PrivateRoute>
-            }
-          />
+          
           <Route
             path="/order_summary"
             element={

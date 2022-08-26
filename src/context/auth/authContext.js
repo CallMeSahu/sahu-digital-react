@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import axios from "axios";
 import { createContext, useContext, useState, useEffect } from "react";
 import { loginService, signUpService } from "../../services";
@@ -50,6 +49,7 @@ const AuthProvider = ({ children }) => {
         setUser(createdUser);
         dataDispatch({
           type: ACTION_TYPE.INITIALIZE_ADDRESS,
+          // eslint-disable-next-line no-undef
           payload: foundUser.address,
         });
       }
