@@ -9,34 +9,33 @@ export function Login(){
         email: "",
         password: "",
       });
-    const navigate = useNavigate();
-    const { token, loginUser } = useAuth();
-    const { setLoader, changeTitle } = useData();
-    const location = useLocation();
-
-    useEffect(() => {
+      const navigate = useNavigate();
+      const { token, loginUser } = useAuth();
+      const { setLoader, changeTitle } = useData();
+      const location = useLocation();
+    
+      useEffect(() => {
         (async () => {
           loginUser(loginForm.email, loginForm.password);
         })();
-    }, [loginForm.email, loginForm.password]);
-
-    useEffect(() => changeTitle("Sign In"), []);
-    if (token) {
+      }, [loginForm.email, loginForm.password]);
+    
+      useEffect(() => changeTitle("Sign In"), []);
+      if (token) {
         setLoader(true);
         setTimeout(() => {
-        navigate(location?.state?.from || "/product", { replace: true });
-        setLoader(false);
+          navigate(location?.state?.from || "/product", { replace: true });
+          setLoader(false);
         }, 500);
-    }
-
-    function loginHandler() {
+      }
+    
+      function loginHandler() {
         setLoginForm((form) => ({
           ...form,
           email: "test@gmail.com",
           password: "admin",
         }));
       }
-
     return (
         <div className='auth-container flex-center'>
             <div className='auth-main-container flex-center'>
