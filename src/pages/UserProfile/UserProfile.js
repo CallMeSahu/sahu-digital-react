@@ -8,56 +8,54 @@ import { AddressForm } from "./component/AddressForm";
 import "./UserProfile.css";
 
 export function UserProfile() {
-    const navigate = useNavigate();
-    const { user, setUser, token, setToken } = useAuth();
-    const { setLoader, dataDispatch, address, changeTitle } = useData();
-    const { firstName, lastName, email } = user;
-    const [check, setChecked] = useState(true);
-
-    const formValue = {
-        name: "",
-        street: "",
-        city: "",
-        state: "",
-        country: "",
-        zipCode: "",
-        mobile: "",
-      };
-
-    const [formDisplay, setFormDisplay] = useState(false);
-    const [addressForm, setAddForm] = useState(formValue);  
-
+  const navigate = useNavigate();
+  const { user, setUser, token, setToken } = useAuth();
+  const { setLoader, dataDispatch, address, changeTitle } = useData();
+  const { firstName, lastName, email } = user;
+  const [check, setChecked] = useState(true);
+  const formValue = {
+    name: "",
+    street: "",
+    city: "",
+    state: "",
+    country: "",
+    zipCode: "",
+    mobile: "",
+  };
+  const [formDisplay, setFormDisplay] = useState(false);
+  const [addressForm, setAddForm] = useState(formValue);
+  
     const logOutHandler = () => {
-        dataDispatch({
-          type: ACTION_TYPE.LOG_OUT,
-        });
-        localStorage.removeItem("login");
-        localStorage.removeItem("user");
-        localStorage.removeItem("signup");
-    
-        setUser();
-        setToken("");
-        setLoader(true);
-        setTimeout(() => {
-          setLoader(false);
-        }, 500);
-        navigate("/");
+      dataDispatch({
+        type: ACTION_TYPE.LOG_OUT,
+      });
+      localStorage.removeItem("login");
+      localStorage.removeItem("user");
+      localStorage.removeItem("signup");
+  
+      setUser();
+      setToken("");
+      setLoader(true);
+      setTimeout(() => {
+        setLoader(false);
+      }, 500);
+      navigate("/");
     };
 
     const editAddress = (_id, name, street, city, state, country, zipCode, mobile) => {
-        setFormDisplay(true);
-        setAddForm((form) => ({
-          ...form,
-          _id,
-          name,
-          street,
-          city,
-          state,
-          country,
-          zipCode,
-          mobile,
-        }));
-      };
+      setFormDisplay(true);
+      setAddForm((form) => ({
+        ...form,
+        _id,
+        name,
+        street,
+        city,
+        state,
+        country,
+        zipCode,
+        mobile,
+      }));
+    };
 
     useEffect(() => changeTitle("My Profile"), [])  
 
@@ -67,7 +65,8 @@ export function UserProfile() {
                 <h2>My Profile</h2>
                 <div className="profile-main">
                     <div className="tabs">
-                        <input type="radio" name="tabs" id="profile" checked={check}
+                        <input type="radio" name="tabs" id="profile" 
+                        checked={check}
                         onChange={() => setChecked(true)} />
                         <label htmlFor="profile">Profile</label>
                         <div className="tab">
@@ -83,10 +82,17 @@ export function UserProfile() {
                                     <p className="paragraph-medium">{email}</p>
                                     </div>
                                 </div>
+                                
+                                <div className="account-setting-container">
+                                      <button class="btn danger setting-logout"
+                                      onClick={() => logOutHandler()}
+                                      >Log Out</button>
+                                </div>
                             </div>
                         </div>
 
-                        <input type="radio" name="tabs" id="address" checked={!check}
+                        <input type="radio" name="tabs" id="address" 
+                        checked={!check}
                         onChange={() => setChecked(!check)} />
                         <label htmlFor="address">Address</label>
                         <div className="tab">                            
@@ -109,23 +115,16 @@ export function UserProfile() {
                                             >Delete</button>
                                         </div>
                                     </div>
-                                ))}                                                         <button class=""
-                                 onClick={() => {
+                                ))} 
+                                <button
+                                  onClick={() => {
                                     setFormDisplay(true);
                                     setAddForm(formValue);
                                   }}
                                   className={`btn default add-address ${formDisplay && "displayNone"}`}
-                                >+ Add New Address</button>                         
-                        </div>
-
-                        <input type="radio" name="tabs" id="tabthree" checked={!check}
-                        onChange={() => setChecked(!check)} />
-                        <label htmlFor="setting">Settings</label>
-                        <div className="tab">
-                            <h3 class="details-header">Account Settings</h3>
-                            <button class="btn danger setting-logout"
-                             onClick={() => logOutHandler()}
-                            >Log Out</button>
+                                >
+                                  + Add New Address
+                                </button>                                                        
                         </div>
                     </div>
                 </div>

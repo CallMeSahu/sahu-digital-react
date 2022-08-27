@@ -10,13 +10,13 @@ makeServer();
 
 ReactDOM.render(
   <React.StrictMode>
-  <OrderProvider>
-    <DataProvider>
-      <AuthProvider>
-        <App />
-      </AuthProvider>
-    </DataProvider>
-  </OrderProvider>
-</React.StrictMode>,
+    <OrderProvider>
+      <DataProvider>
+        <AuthProvider>
+          <App />
+        </AuthProvider>
+      </DataProvider>
+    </OrderProvider>
+  </React.StrictMode>,
   document.getElementById("root")
 );

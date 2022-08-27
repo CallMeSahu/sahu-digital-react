@@ -4,7 +4,7 @@ import "./Loader.css";
 export function Loader() {
   return (
     <div className="loader-wrapper flex-center">
-      <img src={loaderGif} className="loader" alt=""></img>;
+      <img src={loaderGif} className="loader"></img>;
     </div>
   );
 }

@@ -49,7 +49,6 @@ const AuthProvider = ({ children }) => {
         setUser(createdUser);
         dataDispatch({
           type: ACTION_TYPE.INITIALIZE_ADDRESS,
-          // eslint-disable-next-line no-undef
           payload: foundUser.address,
         });
       }

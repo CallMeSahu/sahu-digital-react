@@ -1,9 +1,8 @@
 
 
-export function Checkout() {
+export function Cart() {
   
 
-  
   return (
     <>
       

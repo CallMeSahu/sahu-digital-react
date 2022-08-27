@@ -1,124 +1,130 @@
 .profile-container{
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 .profile-main-container{
-    padding-top: 3rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .tabs{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 500px;
 }
 
 .tabs label{
-    flex-wrap: wrap;
-    padding: 0.5rem 2.1rem;
-    cursor: pointer;
-    transition: background ease 0.3s;
-    border-radius: 10px 10px 0 0;
+  flex-wrap: wrap;
+  padding: 0.5rem 0.25rem;
+  cursor: pointer;
+  transition: background ease 0.3s;
+  border-radius: 10px 10px 0 0;
+  width:48%;
+  text-align: center;
 }
 
 .tabs label:hover{
-    color: var(--white);
-    background: var(--black);
+  color: var(--white);
+  background: var(--black);
 }
 
 .tabs .tab{
-    order: 9;
-    flex-grow: 1;
-    width: 100%;
-    display: none;
-    padding: 1rem;
-    border-radius: 0 0 10px 10px;
-    padding: 20px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-top: 3px solid var(--black)
+  order: 9;
+  flex-grow: 1;
+  width: 100%;
+  display: none;
+  padding: 1rem;
+  border-radius: 0 0 10px 10px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-top: 3px solid var(--black)
 }
 
 .tabs input[type="radio"]{
-    display: none;
+  display: none;
 }
 
 .tabs input[type="radio"]:checked+label{
-    color: var(--white);
-    background: var(--black);
+  color: var(--white);
+  background: var(--black);
 }
 
 .tabs input[type="radio"]:checked+label+.tab{
-    display: block;
+  display: block;
 }
 
 .details-header{
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .profile-detail-main{
-    display: flex;
-    gap: 2rem;
+  display: flex;
+  gap: 2rem;
 }
 
 .profile-detail-main>div{
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .profile-heading{
-    font-weight: bold;
+  font-weight: bold;
+}
+
+.account-setting-container{
+  margin-top: 1.5rem;
 }
 
 .address-btn .btn, .address-form-btn .btn{
-    font-size: 0.9rem;
-    padding: 0.2rem 0.5rem;
-    margin: 0.5rem 0.5rem 1rem 0;
+  font-size: 0.9rem;
+  padding: 0.2rem 0.5rem;
+  margin: 0.5rem 0.5rem 1rem 0;
 }
 
 .add-address{
-    background-color: var(--default);
-    font-size: 1rem;
-   
+  background-color: var(--default);
+  font-size: 1rem;
+ 
 }
 
 .address-form-container{
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    z-index: 2;
-    margin-top: 4rem;
-    transition: background ease 0.3s;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  margin-top: 4rem;
+  transition: background ease 0.3s;
 }
 
 .address-form-input{
-    border-radius: 0.5rem;
-    font-size: 0.9rem;
-    padding: 0.3rem 1rem;
-    cursor: text;
-    width: 367px;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  padding: 0.3rem 1rem;
+  cursor: text;
+  width: 367px;
 }
 
 .address-form, .address-form .form-input{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
 }
 
 .address-form{
-    padding: 1rem;
-    width: fit-content;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 1rem;
-    background-color: var(--white);
+  padding: 1rem;
+  width: fit-content;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 1rem;
+  background-color: var(--white);
 }
 
 .address-form-btn .btn{
-    font-size: 1rem;
+  font-size: 1rem;
 }
