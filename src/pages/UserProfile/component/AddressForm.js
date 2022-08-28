@@ -28,13 +28,13 @@ export function AddressForm({
     e.preventDefault();
     setAddForm((form) => ({
       ...form,
-      name: "Admin",
-      street: "33 , MG Road",
-      city: "Pune",
-      state: "Maharashtra",
+      name: "Test Admin",
+      street: "69 , Test Apartment",
+      city: "Bangalore",
+      state: "Karnataka",
       country: "India",
-      zipCode: "411046",
-      mobile: "12345678",
+      zipCode: "560029",
+      mobile: "9493945182",
     }));
   };
 
@@ -58,7 +58,7 @@ export function AddressForm({
       }`}
     >
       <form className="address-form" onSubmit={(e) => saveHandler(e)}>
-        <h4>ADD NEW ADDRESS</h4>
+        <h3>Add New Address</h3>
         <div className="form-input">
           <input
             placeholder="Enter Name"
@@ -119,7 +119,7 @@ export function AddressForm({
         </div>
         <div className="address-form-btn">
           <input
-            className="btn link-btn address-save"
+            className="btn default address-save"
             type="submit"
             value="Save"
           />
@@ -133,7 +133,7 @@ export function AddressForm({
             type="submit"
             className="btn default address-cancel"
             onClick={(e) => fillFormValueWithDummy(e)}
-            value="Fill with Dummy Values"
+            value="Fill Dummy Values"
           />
         </div>
       </form>
