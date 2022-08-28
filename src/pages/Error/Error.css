@@ -1,0 +1,18 @@
+.error-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;  
+}
+
+.error-illustration{
+    height: 30rem; 
+    margin: 0;
+    padding: 0;   
+}
+   
+
+.product-redirect{
+    cursor: pointer;
+    color: var(--main-color);  
+    text-decoration: underline;
+}

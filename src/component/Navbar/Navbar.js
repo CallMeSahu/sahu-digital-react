@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useAuth, useData } from "../../context";
 import { ACTION_TYPE } from "../../utils";
 import "./Navbar.css";
-import { image } from "../../assets/main-logo.png"
+import mainLogo from "../../assets/main-logo.png"
 
 
 
@@ -42,8 +42,8 @@ export default function Navbar(){
                             />
                         )}
                         <Link to="/">
-                            <h2>Sahu Digital</h2>
-                            {/* <img src={require("../../assets/main-logo.png")} alt=""></img> */}
+                            {/* <h2>Sahu Digital</h2> */}
+                            <img src={mainLogo} alt=""></img>
                         </Link>
                     </div>
                     <div className="search-container">
