@@ -1,4 +1,3 @@
-/* eslint-disable default-case */
 import { ACTION_TYPE } from "../utils";
 
 export const orderState = {
