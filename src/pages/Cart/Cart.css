@@ -1,0 +1,96 @@
+.cart-container{
+    flex-grow: 1;
+}
+
+.cart-main-container{
+    padding: 3rem;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.cart-manage{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.horizontal-container{
+    margin-bottom: 2rem;
+    width: 25rem;
+}
+
+.price-detail{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow:  rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 2rem;
+    height: fit-content;
+    border-radius: 1rem;
+}
+
+.price-totalAmt{
+    border-top: 1px solid var(--lightGrey);
+    border-bottom: 1px solid var(--lightGrey);
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-calculate{
+    border-top: 1px solid (--lightGrey);
+    padding: 0.5rem;
+}
+
+.price-calculate ul>li{
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
+}
+
+.coupon-btn{
+    background-color: inherit;
+    padding: 0.2rem 0.5rem;
+    font-size: 1rem;
+}
+
+.coupons{
+    padding: 0.5rem 0 1rem 0;
+    border-bottom: 1px solid var(--lightGrey);
+}
+
+.coupons a{
+    color: black;
+}
+
+.save-msg{
+    padding-bottom: 0.75rem;
+}
+
+.product-redirect{
+    cursor: pointer;
+    color: var(--link);  
+}
+
+.card-horizontal .card-image{
+    width: 150px;
+}
+
+.apply-coupon-btn:hover{
+    color: var(--link);  
+    cursor: pointer;
+}
+
+.checkout-btn{
+    width: 100%;
+}
+
+.disc-btn{
+    font-size: 0.85rem;
+    padding: 0.1rem 0.4rem;
+}
+
+
+

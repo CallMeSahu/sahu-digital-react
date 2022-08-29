@@ -5,7 +5,6 @@ import Mockman from "mockman-js";
 import Navbar from "./component/Navbar/Navbar";
 import { Login, Signup } from "./pages/Auth";
 import { useData } from "./context";
-import { Loader } from "./component/Loader/Loader";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { OrderSummary } from "./pages/OrderSummary/OrderSummary";
@@ -15,8 +14,7 @@ function App() {
   const { loader } = useData();
   return (
     <div className="App">
-      {loader && <Loader />}
-
+      
       <Router>
         <Navbar />
         <ToastContainer

@@ -9,11 +9,11 @@ export function Error(){
 
   return (
     <div className="error-container flex-center">
-      <h1>Page not Found! Checkout our other {" "}
+      <h2>Page not found! Checkout our other {" "}
         <span className="product-redirect"
           onClick={() => navigate("/product") }
-        >Products</span>
-      </h1>
+        >products</span>.
+      </h2>
       <img className="error-illustration" src={error} alt="" />
       <a href="https://storyset.com/web">Web illustrations by Storyset</a>
     </div>
