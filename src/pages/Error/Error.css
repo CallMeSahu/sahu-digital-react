@@ -13,6 +13,5 @@
 
 .product-redirect{
     cursor: pointer;
-    color: var(--main-color);  
-    text-decoration: underline;
+    color: var(--link);  
 }

@@ -43,10 +43,11 @@
     padding: 0.5rem;
 }
 
-.price-calculate li{
+.price-calculate ul>li{
     margin-top: 0.5rem;
     display: flex;
     justify-content: space-between;
+    gap: 2.5rem;
 }
 
 .coupon-btn{
@@ -70,14 +71,17 @@
 
 .product-redirect{
     cursor: pointer;
-    color: var(--main-color);  
-    text-decoration: underline;
+    color: var(--link);  
 }
 
 .card-horizontal .card-image{
     width: 150px;
 }
 
+.apply-coupon-btn:hover{
+    color: var(--link);  
+    cursor: pointer;
+}
 
 
 

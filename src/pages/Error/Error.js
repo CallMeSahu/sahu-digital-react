@@ -12,7 +12,7 @@ export function Error(){
       <h2>Page not found! Checkout our other {" "}
         <span className="product-redirect"
           onClick={() => navigate("/product") }
-        >products</span>
+        >products</span>.
       </h2>
       <img className="error-illustration" src={error} alt="" />
       <a href="https://storyset.com/web">Web illustrations by Storyset</a>
