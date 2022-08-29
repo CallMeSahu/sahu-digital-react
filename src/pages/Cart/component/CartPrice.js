@@ -60,7 +60,7 @@ export function CartPrice({ setCouponModal }) {
           <li>
             <p><i className="fa fa-tag" araia-hidden="true"></i> {couponValue.couponName}</p>
             <p onClick={() => setCouponValue({ couponName: "", value: 0 })}
-            ><button className="btn outlined-danger">Remove</button></p>
+            ><button className="btn outlined-danger disc-btn">Remove</button></p>
           </li>
           )}
         </ul>
@@ -74,10 +74,10 @@ export function CartPrice({ setCouponModal }) {
       <p className="save-msg">You saved ₹ {totalDiscount} on this order!</p>
       <div className="text-center" 
         onClick={() => checkoutHandler()}
-      ><button class="btn link-btn">Place Order</button></div>
+      ><button class="checkout-btn btn link-btn">Place Order</button></div>
       <div className="text-center" 
         onClick={() => navigate("/product")}
-      ><button class="btn outlined-default">Shop More</button></div>
+      ><button class="checkout-btn btn outlined-default">Countinue Shopping</button></div>
     </div>
   );
 }

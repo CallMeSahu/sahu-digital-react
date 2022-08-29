@@ -83,5 +83,14 @@
     cursor: pointer;
 }
 
+.checkout-btn{
+    width: 100%;
+}
+
+.disc-btn{
+    font-size: 0.85rem;
+    padding: 0.1rem 0.4rem;
+}
+
 
 
