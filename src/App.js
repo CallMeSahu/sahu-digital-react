@@ -18,6 +18,7 @@ function App() {
       <Router>
         <Navbar />
         <ToastContainer
+          bodyClassName="toastBody"
           position="top-right"
           autoClose="500"
           limit="1"

@@ -28,3 +28,8 @@ a {
   button:disabled{
     background:var(--lightGrey)
   }
+
+.toastBody {
+  font-family: "Montserrat", sans-serif;
+} 
+
