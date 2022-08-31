@@ -13,7 +13,6 @@ export function Product(){
         sortBy,
         priceRange,
         sortByRating,
-        setLoader,
         search,
         drawer,
         setDrawer,
@@ -25,10 +24,7 @@ export function Product(){
       const sortedData = sortData([...filteredData], sortBy, priceRange, sortByRating);
 
       useEffect(() => {
-        setLoader(true);
-        setTimeout(() => {
-          setLoader(false);
-        }, 1000);
+        changeTitle("Product")
       }, [])
 
     return(
