@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 import { clearCart } from "../../services/cart/cartServices";
 import { ACTION_TYPE } from "../../utils";
 
-export function CheckoutPrice({ setMsg }) {
+export function CheckoutPrice({ setPaid }) {
   const navigate = useNavigate();
   const { cart, dataDispatch, address } = useData();
   const { couponValue, priceDetails, orderAddress, dispatch, order, setOrder } = useOrder();
@@ -57,8 +57,7 @@ export function CheckoutPrice({ setMsg }) {
         setOrder({ ...orderData });
         clearCart(dataDispatch, cart, token);
         dispatch({ type: ACTION_TYPE.RESET_PRICE });
-        setMsg(true);
-        console.log("Sahu Success");
+        setPaid(true);        
       },
       prefill: {
         name: `${firstName} ${lastName}`,

@@ -9,14 +9,12 @@ import { useNavigate } from "react-router-dom";
 export function Checkout() {
   const { address, cart, changeTitle } = useData();
   const { dispatch, orderAddress } = useOrder();
-  const [msg, setMsg] = useState(false);
+  const [paid, setPaid] = useState(false);
   const navigate = useNavigate();
 
   const placedHandler = () => {
     popper();
-    setTimeout(() => {
-      navigate("/order_summary");
-    }, 1500);
+    navigate("/order_summary");
   };
   useEffect(() => {
     cart.length === 0 && navigate("/product");
@@ -26,10 +24,8 @@ export function Checkout() {
   return (
     <>
       <div className="checkout-container">
-       {msg ? (
-          <h1 className="checkout-main-container flex-center  text-center">
-            🥂 You order has successfully placed !{placedHandler()}
-          </h1>
+       {paid ? (
+          placedHandler()
         ) : (
           <div className="checkout-main-container flex-center">
           <h2>Checkout Order</h2>
@@ -75,7 +71,7 @@ export function Checkout() {
                     </div>
                   ))}
             </div>
-            <CheckoutPrice setMsg={setMsg} />
+            <CheckoutPrice setPaid={setPaid} />
           </div>
         </div>
         )} 
