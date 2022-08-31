@@ -46,7 +46,7 @@ export function CheckoutPrice({ setPaid }) {
       currency: "INR",
       name: "Sahu Digital",
       description: "Thank You for your Purchase!",
-      image: "https://raw.githubusercontent.com/CallMeSahu/sahu-digital/dev/images/main-favicon.png",
+      image: "https://raw.githubusercontent.com/CallMeSahu/sahu-digital-react/dev/src/assets/payment-logo.png",
       handler: function (response) {
         const orderData = {
           products: [...cart],

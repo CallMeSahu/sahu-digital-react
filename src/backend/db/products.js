@@ -8,7 +8,7 @@ import { v4 as uuid } from "uuid";
 export const products = [
   {
     _id: uuid(),
-    img: "https://sahudigital.vercel.app/images/product-img/apple-iphone-13-pro.jpg",
+    img: "https://sahu-digital.vercel.app/images/product-img/apple-iphone-13-pro.jpg",
     name: "iPhone 13 Pro",
     brand: "Apple Inc.",
     price: 112900,
@@ -19,7 +19,7 @@ export const products = [
   },
   {
     _id: uuid(),
-    img: "https://sahudigital.vercel.app/images/product-img/samsung-galaxy-s22-ultra.jpg",
+    img: "https://sahu-digital.vercel.app/images/product-img/samsung-galaxy-s22-ultra.jpg",
     name: "Galaxy S22 Ultra",
     brand: "Samsung Electronics",
     price: 90950,
@@ -30,7 +30,7 @@ export const products = [
   },
   {
     _id: uuid(),
-    img: "https://sahudigital.vercel.app/images/product-img/oneplus-10-pro.jpg",
+    img: "https://sahu-digital.vercel.app/images/product-img/oneplus-10-pro.jpg",
     name: "OnePlus 10 Pro",
     brand: "OnePlus Technology Co.",
     price: 60999,
@@ -41,7 +41,7 @@ export const products = [
   },
   {
     _id: uuid(),
-    img: "https://sahudigital.vercel.app/images/product-img/realme-gt-2.jpg",
+    img: "https://sahu-digital.vercel.app/images/product-img/realme-gt-2.jpg",
     name: "Realme GT 2",
     brand: "Realme Mobile Ltd.",
     price: 34999,
@@ -52,7 +52,7 @@ export const products = [
   },
   {
     _id: uuid(),
-    img: "https://sahudigital.vercel.app/images/product-img/apple-iphone-13-pro-max.jpg",
+    img: "https://sahu-digital.vercel.app/images/product-img/apple-iphone-13-pro-max.jpg",
     name: "iPhone 13 Pro Max",
     brand: "Apple Inc.",
     price: 122900,
@@ -63,7 +63,7 @@ export const products = [
   },
   {
     _id: uuid(),
-    img: "https://sahudigital.vercel.app/images/product-img/samsung-galaxy-s22-plus.jpg",
+    img: "https://sahu-digital.vercel.app/images/product-img/samsung-galaxy-s22-plus.jpg",
     name: "Galaxy S22 Plus",
     brand: "Samsung Electronics",
     price: 78999,
@@ -74,7 +74,7 @@ export const products = [
   },
   {
     _id: uuid(),
-    img: "https://sahudigital.vercel.app/images/product-img/oneplus-10-r.jpg",
+    img: "https://sahu-digital.vercel.app/images/product-img/oneplus-10-r.jpg",
     name: "OnePlus 10R",
     brand: "OnePlus Technology Co.",
     price: 35999,
@@ -85,7 +85,7 @@ export const products = [
   },
   {
     _id: uuid(),
-    img: "https://sahudigital.vercel.app/images/product-img/realme-gt-neo-3.jpg",
+    img: "https://sahu-digital.vercel.app/images/product-img/realme-gt-neo-3.jpg",
     name: "Realme GT Neo 3",
     brand: "Realme Mobile Ltd.",
     price: 35999,
@@ -96,7 +96,7 @@ export const products = [
   },
   {
     _id: uuid(),
-    img: "https://sahudigital.vercel.app/images/product-img/apple-iphone-13.jpg",
+    img: "https://sahu-digital.vercel.app/images/product-img/apple-iphone-13.jpg",
     name: "iPhone 13",
     brand: "Apple Inc.",
     price: 69900,
@@ -107,7 +107,7 @@ export const products = [
   },
   {
     _id: uuid(),
-    img: "https://sahudigital.vercel.app/images/product-img/samsung-galaxy-s22.jpg",
+    img: "https://sahu-digital.vercel.app/images/product-img/samsung-galaxy-s22.jpg",
     name: "Galaxy S22",
     brand: "Samsung Electronics",
     price: 62000,
@@ -118,7 +118,7 @@ export const products = [
   },
   {
     _id: uuid(),
-    img: "https://sahudigital.vercel.app/images/product-img/oneplus-nord-2t.jpg",
+    img: "https://sahu-digital.vercel.app/images/product-img/oneplus-nord-2t.jpg",
     name: "OnePlus Nord 2T",
     brand: "OnePlus Technology Co.",
     price: 27999,
@@ -129,7 +129,7 @@ export const products = [
   },
   {
     _id: uuid(),
-    img: "https://sahudigital.vercel.app/images/product-img/realme-gt-neo-2.jpg",
+    img: "https://sahu-digital.vercel.app/images/product-img/realme-gt-neo-2.jpg",
     name: "Realme GT Neo 2",
     brand: "Realme Mobile Ltd.",
     price: 31999,
@@ -140,7 +140,7 @@ export const products = [
   },
   {
     _id: uuid(),
-    img: "https://sahudigital.vercel.app/images/product-img/apple-iphone-13-mini.jpg",
+    img: "https://sahu-digital.vercel.app/images/product-img/apple-iphone-13-mini.jpg",
     name: "iPhone 13 Mini",
     brand: "Apple Inc.",
     price: 68990,
@@ -151,7 +151,7 @@ export const products = [
   },
   {
     _id: uuid(),
-    img: "https://sahudigital.vercel.app/images/product-img/samsung-galaxy-s21-fe.jpg",
+    img: "https://sahu-digital.vercel.app/images/product-img/samsung-galaxy-s21-fe.jpg",
     name: "Galaxy S21 FE",
     brand: "Samsung Electronics",
     price: 49999,
@@ -162,7 +162,7 @@ export const products = [
   },
   {
     _id: uuid(),
-    img: "https://sahudigital.vercel.app/images/product-img/oneplus-nord-ce2.jpg",
+    img: "https://sahu-digital.vercel.app/images/product-img/oneplus-nord-ce2.jpg",
     name: "OnePlus Nord CE 2",
     brand: "OnePlus Technology Co.",
     price: 24999,
@@ -173,7 +173,7 @@ export const products = [
   },
   {
     _id: uuid(),
-    img: "https://sahudigital.vercel.app/images/product-img/realme-9-pro-plus.jpg",
+    img: "https://sahu-digital.vercel.app/images/product-img/realme-9-pro-plus.jpg",
     name: "Realme 9 Pro Plus",
     brand: "Realme Mobile Ltd.",
     price: 24990,
