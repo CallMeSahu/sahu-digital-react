@@ -29,7 +29,7 @@ export function AddressForm({
     setAddForm((form) => ({
       ...form,
       name: "Test Admin",
-      street: "69 , Test Apartment",
+      street: "69 , Test Apartment, Admin City",
       city: "Bangalore",
       state: "Karnataka",
       country: "India",

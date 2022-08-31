@@ -35,7 +35,7 @@
     border-bottom: 1px solid var(--lightGrey);
     padding: 0.5rem 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .price-calculate{
@@ -90,6 +90,10 @@
 .disc-btn{
     font-size: 0.85rem;
     padding: 0.1rem 0.4rem;
+}
+
+.save-msg{
+    color: var(--green);
 }
 
 

@@ -77,7 +77,7 @@ export function CartPrice({ setCouponModal }) {
       ><button class="checkout-btn btn link-btn">Place Order</button></div>
       <div className="text-center" 
         onClick={() => navigate("/product")}
-      ><button class="checkout-btn btn outlined-default">Countinue Shopping</button></div>
+      ><button class="checkout-btn btn outlined-default">Continue Shopping</button></div>
     </div>
   );
 }

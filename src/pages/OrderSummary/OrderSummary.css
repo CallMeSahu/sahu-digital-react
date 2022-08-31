@@ -4,38 +4,44 @@
 }
 
 .summary-container {
-    margin-top: 3rem;
-    box-shadow: rgb(90 90 90 / 35%) 0px 5px 15px;
+    margin-top: 2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 0.5rem;
     gap: 4rem;
     flex-direction: column;
-    padding: 2rem 4rem 0;
-}
-
-.summary-header {
-    color: green
+    padding: 1.5rem 3rem;
 }
 
 .summary-main {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     justify-content: space-between;
     padding-top: 1rem;
 }
 
+.delivery-add{
+    line-height: 1.25rem;
+}
+
+.countinue-btn{
+    margin-top: 1.5rem
+}
+
 .summary-right {
-    height: 25rem;
+    height: fit-content;
     overflow-y: auto;
     padding: 0rem 1rem;
 }
 
 .summary-left {
-    line-height: 2rem;
+    line-height: 1.75rem;
+    margin-top: 0.5rem;
 }
 
 .summary-right .card {
     border-radius: 10px;
     margin: 0.5rem 0 1rem 0 ;
-    width: 25rem;
+    width: 20rem;
     box-shadow: none;
     border: 1px solid var(--lightGrey);
 }
@@ -44,7 +50,7 @@
     padding-top: 0.5rem;
     font-family: inherit;
     display: flex;
-    gap: 1rem;
+    gap: 0.5rem;
     flex-direction: column;
     font-size: 0.9rem;
 }
@@ -53,23 +59,7 @@
     height: 10rem
 }
 
-::-webkit-scrollbar {
-    width: 5px;
-}
 
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey;
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--darkBlue);
-    border-radius: 10px;
-}
-
-.order-msg{
-    margin-bottom: 2rem;
-}
 @media screen and (max-width:950px){
     .summary-main {
         flex-wrap: wrap;
