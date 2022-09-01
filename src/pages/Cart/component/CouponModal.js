@@ -4,8 +4,8 @@ import { useOrder } from "../../../context/order/orderContext";
 import "./CouponModal.css";
 
 const COUPONS = [
-  { couponName: "FREEDOM_SALE", value: 50 },
-  { couponName: "DIWALI_SALE", value: 35 },
+  { couponName: "FREEDOM_SALE", value: 35 },
+  { couponName: "DIWALI_SALE", value: 25 },
 ];
 
 export function CouponModal({ setCouponModal }) {

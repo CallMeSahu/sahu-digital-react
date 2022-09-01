@@ -40,7 +40,7 @@ export function OrderSummary() {
                   </p>
                   <p className="paragraph-sm">Mobile Number : {delivery.mobile}</p>
                 </div>
-                <div className="countinue-btn" 
+                <div className="countinue-btn flex-center" 
                 onClick={() => navigate("/product")}
                 ><button class="btn link-btn">Continue Shopping</button></div>
               </div>

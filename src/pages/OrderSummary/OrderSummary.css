@@ -5,7 +5,6 @@
 
 .summary-container {
     margin-top: 2rem;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 0.5rem;
     gap: 4rem;
     flex-direction: column;
@@ -25,6 +24,7 @@
 
 .countinue-btn{
     margin-top: 1.5rem
+
 }
 
 .summary-right {
@@ -36,14 +36,18 @@
 .summary-left {
     line-height: 1.75rem;
     margin-top: 0.5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    height: fit-content;
 }
 
 .summary-right .card {
     border-radius: 10px;
-    margin: 0.5rem 0 1rem 0 ;
+    margin: 1rem 0 1rem 0 ;
     width: 20rem;
     box-shadow: none;
-    border: 1px solid var(--lightGrey);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .summary-right .price {
