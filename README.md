@@ -30,7 +30,6 @@ Sahu DIGITAL is a e-commerce web-app to sell electronics online. It can store pr
 - ReactJS
 - React Router
 - [Sahu UI](https://sahu-ui.vercel.app/)
-- [MockBee](https://mockbee.netlify.app/)
 - Razorpay Gateway
 
 
