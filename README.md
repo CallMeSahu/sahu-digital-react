@@ -1,7 +1,7 @@
 <div align="center">
 
    <a href="https://sahudigital.vercel.app/">
-        <img src="/images/main-logo.png"  alt="" /> 
+        <img src="./src/assets/README-logo.png"  alt="" /> 
    </a>
 
  **Online Shopping Electronic Store | Sahu DIGITAL**
@@ -9,6 +9,7 @@
 
 ## **What is Sahu DIGITAL?**
 Sahu DIGITAL is a e-commerce web-app to sell electronics online. It can store product details and showcase them to the user in a good user interface. It has all necessary features required for a e-commerce app such as filters, cart, wishlist, user authentication, checkout and payment gateway.
+[](./src/assets/payment-logo.png)
 
 ## **List of Features**
 - [Home](https://sahudigital.vercel.app/)
