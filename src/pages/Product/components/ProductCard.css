@@ -16,6 +16,10 @@
     color: var(--danger);
 }
 
+.wishlist-icon:hover{
+    transform: scale(1.1);
+}
+
 
 @media screen and (max-width: 950px) {
     .disabled-click {
