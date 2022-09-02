@@ -12,6 +12,10 @@
     border-radius: 0.5rem;
 }
 
+.wishlist-toggle {
+    color: var(--danger);
+}
+
 
 @media screen and (max-width: 950px) {
     .disabled-click {

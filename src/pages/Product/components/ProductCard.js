@@ -65,7 +65,8 @@ export function ProductCard({product}){
                     onClick={() => wishlistHandler()}
                     disabled={true}
                     >
-                    <i className="fa fa-heart-o wishlist-icon" aria-hidden="true"></i>
+                    
+                    <i className={`wishlist-icon ${isInWishlist ? `fa fa-heart` : `fa fa-heart-o`}`} aria-hidden="true"></i>
                     </span>
                 </div>
                 <div className="price">
