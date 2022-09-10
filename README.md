@@ -24,7 +24,6 @@ Sahu DIGITAL is a e-commerce web-app to sell electronics online. It can store pr
 - [Address Management](https://sahudigital.vercel.app/user_profile)
 - [Checkout](https://sahudigital.vercel.app/checkout)
 - [Order Summary](https://sahudigital.vercel.app/order_summary)
-- Fully Responsive
 
 ## **Tech-Stack**
 - ReactJS
