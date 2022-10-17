@@ -64,13 +64,13 @@ export function Home(){
         <div className="footer flex-center">
             <h4>Made with ❤️ by Siddhartha Sahu</h4>
             <div className="icon-bar">
-                <a href="https://github.com/CallMeSahu" className="github">
+                <a target="_blank" href="https://github.com/CallMeSahu" className="github">
                     <i className="fa fa-github" aria-hidden="true"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/siddhartha-sahu/" className="linkedin">
+                <a target="_blank" href="https://www.linkedin.com/in/siddhartha-sahu/" className="linkedin">
                     <i className="fa fa-linkedin" aria-hidden="true"></i>
                 </a>
-                <a href="https://twitter.com/CallMeSahu" className="twitter">
+                <a target="_blank" href="https://twitter.com/CallMeSahu" className="twitter">
                     <i className="fa fa-twitter" aria-hidden="true"></i>
                 </a>
             </div>
